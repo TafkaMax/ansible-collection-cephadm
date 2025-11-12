@@ -4,6 +4,14 @@ stackhpc.cephadm Release Notes
 
 .. contents:: Topics
 
+v1.22.0
+=======
+
+Minor Changes
+-------------
+
+- Add Tentacle support
+
 v1.21.1
 =======
 
