@@ -33,9 +33,9 @@ releases:
     fragments:
     - sudo-fix.yml
     release_date: '2025-01-08'
-  1.19.2:
+  1.21.1:
     changes:
       bugfixes:
-      - prechecks - fix groups existing assertion
       - prechecks - change groups existence check to run once
-    release_date: '2025-10-09'
+      - prechecks - fix groups existing assertion
+    release_date: '2025-11-12'
