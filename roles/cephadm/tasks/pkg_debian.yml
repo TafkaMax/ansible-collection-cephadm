@@ -5,7 +5,7 @@
     id: E84AC2C0460F3994
     state: absent
   become: true
-  when: ansible_distribution_major_version <= 12
+  when: ansible_distribution_major_version|int <= 12
 
 - name: Ensure keys directory exists
   file:
