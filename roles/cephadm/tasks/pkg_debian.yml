@@ -1,6 +1,6 @@
 ---
 # Remove any old Ceph keys added to the main keyring.
-- name: "Clean up old key if {{ ansible_distribution_major_version }} <= 12"
+- name: "Clean up old key if Ansible Distribution Major Version is bookworm or older (Current version: {{ ansible_distribution_major_version }})"
   apt_key:
     id: E84AC2C0460F3994
     state: absent
