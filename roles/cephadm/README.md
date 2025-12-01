@@ -36,8 +36,9 @@ You can override the previous groups with your own.
 * `mgrs` -> `cephadm_ansible_mgrs_group`
 * `osds` -> `cephadm_ansible_osds_group`
 * `rgws` -> `cephadm_ansible_rgws_group`
+* `ingress` -> `cephadm_ansible_ingress_group`
 
-You would also probably need to change `cephadm_bootstrap_host`.
+You would also probably need to change `cephadm_bootstrap_host` to pickup the bootstrap host from another group, that isn't the default.
 
 ## Role variables
 

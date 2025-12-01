@@ -18,7 +18,7 @@ labels:
 {% if host in groups.get(cephadm_ansible_rgws_group, []) %}
   - rgw
 {% endif %}
-{% if host in groups.get('ingress', []) %}
+{% if host in groups.get(cephadm_ansible_ingress_group, []) %}
   - ingress
 {% endif %}
 {% if hostvars[host].get('cephadm_host_labels', []) | length > 0 %}
@@ -65,7 +65,7 @@ networks:
 {% endif %}
 {% endfor %}
 {% endif %}
-{% if groups.get('ingress', []) | length > 0 %}
+{% if groups.get(cephadm_ansible_ingress_group, []) | length > 0 %}
 {% for service in cephadm_ingress_services %}
 ---
 service_type: ingress

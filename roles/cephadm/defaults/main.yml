@@ -56,3 +56,4 @@ cephadm_ansible_mons_group: mons
 cephadm_ansible_mgrs_group: mgrs
 cephadm_ansible_osds_group: osds
 cephadm_ansible_rgws_group: rgws
+cephadm_ansible_ingress_group: ingress
