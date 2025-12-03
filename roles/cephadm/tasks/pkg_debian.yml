@@ -5,7 +5,7 @@
     id: E84AC2C0460F3994
     state: absent
   become: true
-  when: (ansible_distribution == 'Debian' and ansible_distribution_major_version|int <= 12) or (ansible_distribution == 'Ubuntu' and ansible_distribution_major_version|int <= 24)
+  when: (ansible_facts.distribution == 'Debian' and ansible_facts.distribution_major_version|int <= 12) or (ansible_facts.distribution == 'Ubuntu' and ansible_facts.distribution_major_version|int <= 24)
 
 - name: Ensure keys directory exists
   file:
