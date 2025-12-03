@@ -1,11 +1,10 @@
 ---
 # Remove any old Ceph keys added to the main keyring.
-- name: "Clean up old key for older releases (including the release specified) than debian 12 and ubuntu 24.04"
+- name: Clean up old key
   apt_key:
     id: E84AC2C0460F3994
     state: absent
   become: true
-  when: (ansible_distribution == 'Debian' and ansible_distribution_major_version|int <= 12) or (ansible_distribution == 'Ubuntu' and ansible_distribution_major_version|int <= 24)
 
 - name: Ensure keys directory exists
   file:
